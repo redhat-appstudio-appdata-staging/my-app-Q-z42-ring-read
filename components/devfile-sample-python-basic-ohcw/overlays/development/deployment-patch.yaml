@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ohcw
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-python-basic-ohcw@sha256:ed0ffa31febccd47dd1c1a1dbbc655136ecc98cdd3cd76d0bded57043c4b90c0
+        name: container-image
+        resources: {}
+status: {}
